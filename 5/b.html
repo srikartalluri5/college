@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      margin: 0;
+      height: 200vh; /* make page scrollable */
+      perspective: 800px; /* for 3D tilt */
+      font-family: Arial, sans-serif;
+    }
+
+    /* fixed background image */
+    .bg-image {
+      position: fixed;
+      top: 50%;              /* halfway down */
+      left: 50%;
+      transform: translate(-50%, -50%) rotateX(20deg);
+      width: 400px;
+      height: 250px;
+      background-image: url('https://picsum.photos/600/400');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      z-index: -1; /* stays behind text */
+    }
+
+    .content {
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="bg-image"></div>
+
+  <div class="content">
+    <h1>Scroll the page</h1>
+    <p>This text scrolls, but the image stays fixed halfway down and tilted.</p>
+    <p>Keep scrolling...</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel ligula nec quam porta volutpat.</p>
+    <p>More content to make the page long enough for scrolling...</p>
+  </div>
+</body>
+</html>

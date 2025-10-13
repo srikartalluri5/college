@@ -1,0 +1,24 @@
+/* Named color */
+.named-color {
+    color: red;
+}
+
+/* Hex color */
+.hex-color {
+    color: #00ff00;
+}
+
+/* RGB color */
+.rgb-color {
+    color: rgb(0, 0, 255);
+}
+
+/* RGBA color with transparency */
+.rgba-color {
+    color: rgba(255, 0, 0, 0.5);
+}
+
+/* HSL color */
+.hsl-color {
+    color: hsl(120, 100%, 50%);
+}
