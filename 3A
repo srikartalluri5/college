@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>HTML5 Semantic Tags Example</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #4682b4;
+      color: white;
+      padding: 10px;
+      text-align: center;
+    }
+    nav {
+      background: #87ceeb;
+      padding: 8px;
+      text-align: center;
+    }
+    nav a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: black;
+      font-weight: bold;
+    }
+    main {
+      padding: 15px;
+    }
+    figure {
+      text-align: center;
+    }
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      position: fixed;  /* keeps footer at bottom */
+      bottom: 0;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>My Website</h1>
+</header>
+
+<nav>
+  <a href="#">Home</a> | 
+  <a href="#">About</a> | 
+  <a href="#">Contact</a>
+</nav>
+
+<main>
+  <article>
+    <h2>Article Title</h2>
+    <p>This is an <span style="color:blue;">article</span> inside the main content.</p>
+  </article>
+
+  <aside>
+    <p>This is an aside (sidebar information).</p>
+  </aside>
+
+  <section>
+    <h2>Section Title</h2>
+    <p>This is a section of the page.</p>
+  </section>
+
+  <figure>
+    <!-- Working image link -->
+    <img src="https://www.w3schools.com/html/img_girl.jpg" alt="Sample Image" width="200">
+    <figcaption>Figure 1: A Sample Image</figcaption>
+  </figure>
+</main>
+
+<div>
+  <p>This is inside a <span style="color:red;">div and span</span>.</p>
+</div>
+
+<footer>
+  <p>© 2025 My Website</p>
+</footer>
+
+</body>
+</html>
