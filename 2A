@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple Table</title>
+</head>
+<body>
+    <h2>Table Example</h2>
+
+    <table border="1">
+        <tr>
+            <th rowspan="2">Name</th>
+            <th colspan="2">Subjects</th>
+        </tr>
+        <tr>
+            <th>Math</th>
+            <th>Science</th>
+        </tr>
+        <tr>
+            <td>Ravi</td>
+            <td>85</td>
+            <td>90</td>
+        </tr>
+        <tr>
+            <td>Sita</td>
+            <td>78</td>
+            <td>88</td>
+        </tr>
+    </table>
+
+</body>
+</html>
