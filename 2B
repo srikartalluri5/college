@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple Timetable</title>
+</head>
+<body>
+    <h2>Class Timetable</h2>
+
+    <table border="1" cellspacing="5" cellpadding="10">
+        <caption><b>Weekly Timetable</b></caption>
+
+        <!-- Header Row -->
+        <tr>
+            <th>Day</th>
+            <th>9-10 AM</th>
+            <th>10-11 AM</th>
+            <th>11-12 PM</th>
+            <th>12-1 PM</th>
+        </tr>
+
+        <!-- Monday -->
+        <tr>
+            <td rowspan="2">Monday</td>
+            <td>Math</td>
+            <td>Science</td>
+            <td rowspan="2">English</td>
+            <td>Lunch</td>
+        </tr>
+        <tr>
+            <td colspan="2">Computer Lab</td>
+            <td>Sports</td>
+        </tr>
+
+        <!-- Tuesday -->
+        <tr>
+            <td>Tuesday</td>
+            <td>Math</td>
+            <td>Science</td>
+            <td>English</td>
+            <td>Lunch</td>
+        </tr>
+    </table>
+
+</body>
+</html>
