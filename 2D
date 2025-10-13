@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Frames Example</title>
+</head>
+
+<!-- Divide screen into 3 vertical parts -->
+<frameset cols="33%,34%,33%">
+    <!-- First Frame: Image -->
+    <frame srcdoc="
+        <h3>Image Frame</h3>
+        <img src='https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=300' 
+             width='250' height='150'>
+    ">
+
+    <!-- Second Frame: Paragraph -->
+    <frame srcdoc="
+        <h3>Paragraph Frame</h3>
+        <p>This is a sample paragraph displayed inside the second frame. 
+        Frames allow us to divide a browser window into multiple sections.</p>
+    ">
+
+    <!-- Third Frame: Hyperlink -->
+    <frame srcdoc="
+        <h3>Hyperlink Frame</h3>
+        <a href='https://www.google.com' target='_blank'>Visit Google</a><br>
+        <a href='https://www.wikipedia.org' target='_blank'>Visit Wikipedia</a>
+    ">
+
+    <!-- No Frame -->
+    <noframes>
+        <body>
+            <p>Your browser does not support frames.</p>
+        </body>
+    </noframes>
+</frameset>
+</html>
