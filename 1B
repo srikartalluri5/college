@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hyperlinks Example</title>
+</head>
+<body>
+    <h2>Hyperlinks Example</h2>
+
+    <!-- Opens in the same tab -->
+    <p><a href="https://www.google.com">Visit Google</a></p>
+
+    <!-- Opens in a new tab -->
+    <p><a href="https://www.sasi.ac.in" target="_blank">Visit SASI  in New Tab</a></p>
+
+    <!-- Opens in parent frame -->
+    <p><a href="https://chatgpt.com/" target="_parent">Visit ChatGpt</a></p>
+</body>
+</html>
