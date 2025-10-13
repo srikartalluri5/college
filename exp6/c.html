@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript Input Methods Demo</title>
+</head>
+<body>
+    <h2>JavaScript Input Methods</h2>
+    <button onclick="takeInputPrompt()">Take Input using prompt()</button>
+    <p id="promptInput"></p>
+    <label for="textInput">Enter some text:</label>
+    <input type="text" id="textInput" name="textInput">
+    <button onclick="takeInputFromText()">Submit Text Input</button>
+    <p id="textInputDisplay"></p>
+    <label for="numberInput">Enter a number:</label>
+    <input type="number" id="numberInput" name="numberInput">
+    <button onclick="takeInputFromNumber()">Submit Number Input</button>
+    <p id="numberInputDisplay"></p>
+    <script>
+        function takeInputPrompt() {
+            let userInput = prompt("Please enter your name:");
+            if(userInput !== null && userInput !== "") {
+                document.getElementById("promptInput").innerText = "You entered (prompt): " + userInput;
+            } else {
+                document.getElementById("promptInput").innerText = "No input provided.";
+            }
+        }
+        function takeInputFromText() {
+            let inputText = document.getElementById("textInput").value;
+            if(inputText) {
+                document.getElementById("textInputDisplay").innerText = "You entered (text input): " + inputText;
+            } else {
+                document.getElementById("textInputDisplay").innerText = "Please enter text.";
+            }
+        }
+        function takeInputFromNumber() {
+            let inputNumber = document.getElementById("numberInput").value;
+            if(inputNumber) {
+                document.getElementById("numberInputDisplay").innerText = "You entered (number input): " + inputNumber;
+            } else {
+                document.getElementById("numberInputDisplay").innerText = "Please enter a number.";
+            }
+        }
+    </script>
+</body>
+</html>

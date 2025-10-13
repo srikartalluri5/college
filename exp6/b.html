@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript Output Methods Demo</title>
+</head>
+<body>
+    <h2>JavaScript Output Display</h2>
+    <button onclick="showAlert()">Show Alert Output</button>
+    <button onclick="showDocumentWrite()">Show Document.write Output</button>
+    <button onclick="showInnerHTML()">Show innerHTML Output</button>
+    <button onclick="showConsoleLog()">Show Console.log Output</button>
+    <button onclick="showTextContent()">Show textContent Output</button>
+    <div id="output1"></div>
+    <div id="output2"></div>
+    <script>
+        // 1. alert() method
+        function showAlert() {
+            alert("This is output from alert()");
+        }
+        // 2. document.write() method
+        function showDocumentWrite() {
+            document.write("This is output from document.write()");
+        }
+        // 3. innerHTML property
+        function showInnerHTML() {
+            document.getElementById('output1').innerHTML = "This is output from innerHTML.";
+        }
+        // 4. console.log() method
+        function showConsoleLog() {
+            console.log("This is output from console.log()");
+            alert("Open the browser console to see the output.");
+        }
+        // 5. textContent property
+        function showTextContent() {
+            document.getElementById('output2').textContent = "This is output from textContent.";
+        }
+    </script>
+</body>
+</html>

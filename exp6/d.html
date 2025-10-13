@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Voter Eligibility Checker</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 50%;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid #333;
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Voter Eligibility Checker</h2>
+    <button onclick="checkEligibility()">Enter Details</button>
+
+    <div id="result"></div>
+
+    <script>
+        function checkEligibility() {
+            let name = prompt("Please enter your name:");
+            if(name === null || name.trim() === "") {
+                alert("Name cannot be empty.");
+                return;
+            }
+
+            let age = prompt("Please enter your age:");
+            if(age === null || age.trim() === "" || isNaN(age)) {
+                alert("Please enter a valid age.");
+                return;
+            }
+            age = parseInt(age);
+            let canVote = (age >= 18) ? "Yes, the voter can vote." : "No, the voter cannot vote.";
+            let tableHTML = `
+                <table>
+                    <tr>
+                        <th>Name</th>
+                        <th>Age</th>
+                        <th>Voter Eligibility</th>
+                    </tr>
+                    <tr>
+                        <td>${name}</td>
+                        <td>${age}</td>
+                        <td>${canVote}</td>
+                    </tr>
+                </table>
+            `;
+
+            document.getElementById("result").innerHTML = tableHTML;
+        }
+    </script>
+</body>
+</html>
